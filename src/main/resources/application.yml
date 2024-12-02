@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: phonebook
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: phonebook
+      username: admin
+      password: password
+      authentication-database: admin
+
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+
+logging:
+  level:
+    root: info
+    org.springframework: info

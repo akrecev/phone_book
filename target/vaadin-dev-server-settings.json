@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "D:/akretsev/project/phone_book/demo-phone-book/PhoneBook/./frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "D:/akretsev/project/phone_book/demo-phone-book/PhoneBook/./frontend/generated/jar-resources",
+  "staticOutput": "D:/akretsev/project/phone_book/demo-phone-book/PhoneBook/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "D:\\akretsev\\project\\phone_book\\demo-phone-book\\PhoneBook\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "D:\\akretsev\\project\\phone_book\\demo-phone-book\\PhoneBook\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "D:/akretsev/project/phone_book/demo-phone-book/PhoneBook/target/dev-bundle/webapp",
+  "devBundleStatsOutput": "D:/akretsev/project/phone_book/demo-phone-book/PhoneBook/target/dev-bundle/config",
+  "jarResourcesFolder": "D:/akretsev/project/phone_book/demo-phone-book/PhoneBook/./frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "D:\\akretsev\\project\\phone_book\\demo-phone-book\\PhoneBook\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
