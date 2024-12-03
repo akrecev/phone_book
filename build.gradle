@@ -10,6 +10,7 @@ sourceCompatibility = "17"
 
 ext {
     vaadinVersion = "24.3.12"
+    lombokVersion = "1.18.30"
 }
 
 repositories {
@@ -21,7 +22,12 @@ dependencies {
     implementation "org.springframework.boot:spring-boot-starter-web"
     implementation "org.springframework.boot:spring-boot-docker-compose"
     implementation "com.vaadin:vaadin-spring-boot-starter:${vaadinVersion}"
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    
     testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 }
 
 tasks.named("test") {
