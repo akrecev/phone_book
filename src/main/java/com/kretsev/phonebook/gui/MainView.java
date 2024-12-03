@@ -17,10 +17,14 @@ public class MainView extends VerticalLayout {
     public MainView(ContactService contactService) {
         this.contactService = contactService;
 
+        // Настройка таблицы
         contactGrid.setColumns("name", "phoneNumber", "email", "notes");
         refreshGrid();
 
-        Button addButton = new Button("Добавить контакт", e -> openEditor(new Contact()));
+        // Кнопки
+        Button addButton = new Button("Добавить контакт", e -> openContactForm(new Contact()));
+        contactGrid.addItemClickListener(event -> openContactForm(event.getItem())); // Редактирование по клику
+
         add(addButton, contactGrid);
     }
 
@@ -28,8 +32,8 @@ public class MainView extends VerticalLayout {
         contactGrid.setItems(contactService.getAllContacts());
     }
 
-    private void openEditor(Contact contact) {
-        ContactEditorDialog editor = new ContactEditorDialog(contact, contactService, this::refreshGrid);
-        editor.open();
+    private void openContactForm(Contact contact) {
+        ContactFormDialog dialog = new ContactFormDialog(contact, contactService, this::refreshGrid);
+        dialog.open();
     }
 }
